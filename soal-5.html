@@ -1,0 +1,17 @@
+<script>
+  var oldArray = [1, 2, 3, 4, 5];
+
+  function addIntegerToArray(array, integerToAdd) {
+    var newArray = array.map(function (value) {
+      return value + integerToAdd;
+    });
+
+    return newArray;
+  }
+
+  // Example usage:
+  var userInput = parseInt(prompt("Enter an integer value:"));
+  var newArray = addIntegerToArray(oldArray, userInput);
+  console.log("Old Array:", oldArray);
+  console.log("New Array:", newArray);
+</script>
